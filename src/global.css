@@ -1,0 +1,23 @@
+/* src/global.css */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Este estilo asegura que el cuerpo ocupe toda la altura de la ventana */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* global.css */
+.body-no-scroll {
+  overflow-y: hidden;
+}
+
+@media (max-width: 768px) { /* Ajusta el valor de 768px según sea necesario */
+  .body-no-scroll {
+      overflow-y: auto; /* Permite el desplazamiento vertical en dispositivos móviles */
+  }
+}
