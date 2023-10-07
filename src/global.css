@@ -4,6 +4,10 @@ body, html {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Este estilo asegura que el cuerpo ocupe toda la altura de la ventana */
 body {
   min-height: 100vh;

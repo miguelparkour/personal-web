@@ -1,16 +1,23 @@
+/* Navbar.css */
 .navbar {
-  margin: 0;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #333;
-  padding: 2rem;
+  gap: 2em;
+  font-size: 1em;
+  height: 4em;
 }
 
-.navbar a {
+.link {
   color: #fff;
-  margin: 0 0.5rem;
-  text-decoration: none;
 }
 
-.active-link {
-  text-decoration: underline;
+.logo-container {
+  margin: 0 20px;  /* Espacio a la izquierda y derecha del logo */
+}
+
+.logo {
+  height: 50px;  /* Ajusta según el tamaño que desees para el logo */
+  width: auto;  /* Mantén el aspecto del logo */
 }

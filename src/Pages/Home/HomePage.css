@@ -8,6 +8,26 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-text, .right-text {
+  max-width: 200px;
+}
+
+.text-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  margin: 3em;
+}
+
+.line {
+  border-top: solid black 1px;
+  width: 5em;
 }
 
 

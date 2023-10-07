@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './HomePage.css';  // Importa el CSS desde un archivo separado.
 
 
@@ -15,9 +16,24 @@ function HomePage() {
     };
   }, []);  // El array vacío asegura que este efecto solo se ejecute una vez, similar a componentDidMount y componentWillUnmount
 
+  const { t } = useTranslation();
+
   return (
     <div className="home-page">
-      <h1>Bienvenido a mi Página Web</h1>
+      <div className="left-text text-group">
+        <h1 className="title">{t('myNameShort')}</h1>
+        <div className="line"></div>
+        <p className="pagraph">{t('motivationalQuote1')}</p>
+        <div className="line"></div>
+      </div>
+      <div className="right-text text-group">
+        <h5 className="sub-title">{t('myNameLarge')}</h5>
+        <div className="line"></div>
+        <p className="pagraph">{t('motivationalQuote2')}</p>
+        <div className="line"></div>
+        <p className="pagraph">{t('motivationalQuote3')}</p>
+        <div className="line"></div>
+      </div>
     </div>
   );
 }
